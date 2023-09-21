@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Event di JS</title>
+</head>
+<body>
+    <h1 id="judul">Klik Tombol Untuk Mengubah Teks</h1>
+    <button id="tombol">Klik Saya</button>
+    <button onclick="this.innerHTML = Date()">The time is? </button>
+    <script>
+        // Mengambil referensi elemen tombol dan judul
+        var tombol = document.getElementById("tombol");
+        var judul = document.getElementById("judul");
+
+        // Menambahkan event listener untuk event click pada tombol
+        tombol.addEventListener("click", function() {
+            judul.innerHTML = "Teks Telah Diubah!";
+        });
+
+        
+    </script>
+</body>
+</html>

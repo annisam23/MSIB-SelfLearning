@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek di js</title>
+</head>
+<body>
+    <h1>Modular Function di JavaScript</h1>
+    <script>
+        function removeSpaces(text){
+            return text.replace(/\s/g, ''); // Remove all spaces
+        }
+
+        function reverseText(text){
+            return text.split('').reverse().join(''); // Reverse the text
+        }
+
+        function updateVowels(text){
+            return text.replace(/[aeiou]/gi, ''); // Remove vowels
+        }
+
+        var password = 'hacktiv 8';
+        var noSpaces = removeSpaces(password);
+        var reversed = reverseText(noSpaces);
+        var encryptedPassword = updateVowels(reversed);
+
+        console.log(encryptedPassword);
+    </script>
+</body>
+</html>

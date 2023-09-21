@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+
+.box{
+    background-color: salmon;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.box-dua{
+    background-color: pink;
+    height: 200px;
+    width: 300px;
+    margin-left:  70px;
+}
+
+.box-tiga{
+    background-color: rosybrown;
+    height: 200px;
+    width: 300px;
+    padding:  20px;
+}
+
+.box-empat{
+    background-color: powderblue;
+    height: 200px;
+    width: 300px;
+    padding-left:  70px;
+}

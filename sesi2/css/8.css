@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+ul.tran{
+    list-style-type: circle;
+}
+
+ul.kota{
+    list-style-type: square;
+}
+
+ul.merk{
+    list-style-type: upper-latin;
+}

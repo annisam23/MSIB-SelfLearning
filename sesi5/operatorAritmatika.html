@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Aritmatika</title>
+</head>
+<body>
+    <h1>Penggunaan Operator Aritmatika di JS</h1>
+    
+    <div id="jumlah"></div>
+    <div id="kurang"></div>
+    <div id="kali"></div>
+    <div id="bagi"></div>
+    <div id="modulus"></div>
+
+    <script>
+        var bil1 = 6;
+        var bil2 = 2;
+
+        var jumlah = bil1 + bil2;
+        var kurang = bil1 - bil2;
+        var kali = bil1 * bil2;
+        var bagi = bil1 / bil2;
+        var modulus = bil1 % bil2;
+
+        document.getElementById("jumlah").innerHTML = "Hasil Penjumlahan: " + jumlah;
+        document.getElementById("kurang").innerHTML = "Hasil Pengurangan: " + kurang;
+        document.getElementById("kali").innerHTML = "Hasil Perkalian: " + kali;
+        document.getElementById("bagi").innerHTML = "Hasil Pembagian: " + bagi;
+        document.getElementById("modulus").innerHTML = "Hasil Modulus: " + modulus;
+    </script>
+</body>
+</html>

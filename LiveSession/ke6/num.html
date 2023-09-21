@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleclick(1)">1</button>
+    <button onclick="handleclick(2)">2</button>
+    <button onclick="handleclick(3)">3</button>
+    <button onclick="handleclick(4)">4</button>
+    <button onclick="handleclick(5)">5</button>
+    <button onclick="handleclick(6)">6</button>
+    <button onclick="handleclick(7)">7</button>
+    <button onclick="handleclick(8)">8</button>
+    <button onclick="handleclick(9)">9</button>
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="divide()">/</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="reset()">clear</button>
+    <h3 id="result"></h3>
+    
+    <script>
+        let data = "";
+        function handleclick(num){
+            data+= num;
+            document.getElementById("result").innerHTML = data;
+        }
+        
+        function reset(){
+            data = ""; 
+            document.getElementById("result").innerHTML = data;
+        }
+
+        function add() {
+            data += "+";
+            document.getElementById("result").innerHTML = data;
+        }
+
+        function subtract() {
+            data += "-";
+            document.getElementById("result").innerHTML = data;
+        }
+
+        function multiply() {
+            data += "*";
+            document.getElementById("result").innerHTML = data;
+        }
+
+        function divide() {
+            data += "/";
+            document.getElementById("result").innerHTML = data;
+        }
+
+        function calculateResult() {
+            try {
+                document.getElementById("result").innerHTML = eval(data);
+            } catch (error) {
+                document.getElementById("result").innerHTML = "Error";
+            }
+        }
+    </script>
+</body>
+</html>

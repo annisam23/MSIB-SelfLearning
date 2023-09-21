@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+    @font-face {
+        font-family: 'Poppins';
+        src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+
+    nav {
+    background-color: white;
+    }
+
+    ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    }
+
+    li {
+    margin: 0 10px;
+    }   
+
+    li a {
+    text-decoration: none;
+    color: #acacac;
+    }
+
+    .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 20px rgba(0, 0, 0,0.2);
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 50%;
+            height: auto;
+            margin: 5px;
+        }
+
+        .details {
+            flex: 2;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .details button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .details button a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-info{
+            flex: 3;
+        }
+
+        form{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        label{
+            margin: 2px;
+            padding: 3px;
+            font-weight: bold;
+
+        }
+
+        input{
+            margin: 4px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+            outline: none; 
+            width: 1250px;
+        }
+        input[type="button"],
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">My Inventory</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="image">
+            <img src="img/2.jpg" alt="Icantiks">
+        </div>
+        <div class="details">
+            <h1>Annisa Maulida Rahma</h1>
+            <p>Junior Web Developer</p>
+            <div class="buttons">
+                <button><a href="#">Contact</a></button>
+                <button><a href="#">Resume</a></button>
+            </div>
+            <div class="contact-info">
+            
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <label for="nama">Name</label><br>
+        <input type="text" name="nama"><br>
+
+        <label for="role">Role</label><br>
+        <input type="text" name="role"><br>
+
+        <label for="availibility">Availibility</label><br>
+        <input type="text" name="availibility"><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" name="age"><br>
+
+        <label for="address">Lokasi</label><br>
+        <input type="text" name="address"><br>
+
+        <label for="years">Years Experience</label><br>
+        <input type="text" name="years"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email"><br>
+        
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
